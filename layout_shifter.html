@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Off-Canvas</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+                  [class^="col"] {
+        padding: 0;
+      }
+
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      .box {
+        height: 200px;
+      }
+
+      .orange {
+        background-color: orange;
+      }
+
+      .cyan {
+        background-color: cyan;
+      }
+
+      .lightblue {
+        background-color:lightblue;
+      }
+
+      .green {
+        background-color:magenta;
+      }
+
+      @media screen and (min-width: 768px) {
+        .cyan {
+          height: 400px;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        .orange {
+          height: 400px;
+        }
+      }
+
+    </style>
+  </head>
+<body>
+    <!--container-->
+    <div class="container">
+
+      <div class="row">
+    
+        <div class="col-md-9 col-md-push-3">
+        <!-- cyan, lightblue and green columns -->
+          <div class="row">
+
+        <!-- lightblue column -->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-push-8">
+          <div class="box cyan"></div>
+        </div>
+        
+        
+        <!-- lightblue and green columns -->
+        <div class="col-xs-12 col-sm-6 col-md-8 col-md-pull-4">
+          <div class="row">
+            <!-- lightblue column -->
+            <div class="col-xs-12">
+              <div class="box lightblue"></div>
+            </div>
+            <!-- green column -->
+            <div class="col-xs-12">
+              <div class="box green"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+    
+        <div class="col-md-9 col-md-push-3">
+        <!-- cyan, lightblue and green columns -->
+          <div class="row">
+
+        <!-- lightblue column -->
+        <div class="col-xs-12 col-sm-6 col-md-4 col-md-push-8">
+          <div class="box cyan"></div>
+        </div>
+        
+        
+        <!-- lightblue and green columns -->
+        <div class="col-xs-12 col-sm-6 col-md-8 col-md-pull-4">
+          <div class="row">
+            <!-- lightblue column -->
+            <div class="col-xs-12">
+              <div class="box lightblue"></div>
+            </div>
+            <!-- green column -->
+            <div class="col-xs-12">
+              <div class="box green"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- orange column -->
+    <div class="col-md-3 col-md-pull-9">
+      <div class="box orange"></div>
+    </div>
+
+  </div>
+
+
+</div>
+      
+    <!--end container-->
+   
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
